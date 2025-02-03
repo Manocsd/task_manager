@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Task</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Create Task</h1>
+        <form method="POST">
+            <input type="text" name="title" placeholder="Task Title" required><br><br>
+            <textarea name="description" placeholder="Task Description" required></textarea><br><br>
+            <input type="text" name="assignee_id" placeholder="Assignee ID (optional)"><br><br>
+            <input type="submit" value="Create Task">
+        </form>
+    </div>
+</body>
+</html>
